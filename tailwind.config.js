@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+/* eslint-disable indent */
+// eslint-disable-next-line no-undef
 module.exports = {
   content: [
     './app/**/*.{ts,tsx}',
