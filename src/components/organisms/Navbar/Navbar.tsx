@@ -16,7 +16,7 @@ export const Navbar = () => {
       <nav className="sticky transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm customLg:h-20">
         <div className="flex justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
-            href=""
+            href="#"
             className="text-center customXs:text-base customLg:text-xl">
             Przestrzeń rozmowy 🧠
           </Link>
