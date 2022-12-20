@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useMobile } from 'hooks/useMobile';
 import Link from 'next/link';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { isMobile } = useMobile();
+  const displayMobileNavbar = isOpen && isMobile;
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -10,12 +13,23 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm">
+      <nav className="sticky transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm customLg:h-20">
         <div className="flex justify-around items-center w-full text-primary text-sm font-extrabold">
+          <Link
+            href=""
+            className="text-center customXs:text-base customLg:text-xl">
+            Przestrzeń rozmowy 🧠
+          </Link>
+          {!isMobile && (
+            <div className="flex w-1/4 p-3 justify-around items-center text-md font-medium customLg:text-lg">
+              <Link href="#about">O nas 👩‍💼👨‍💼</Link>
+              <Link href="#contact">Kontakt 📞</Link>
+            </div>
+          )}
           <button
             onClick={handleOpen}
             aria-label="Toggle menu"
-            className="bg-white rounded-xl  p-2 m-0 bo md:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white">
+            className="bg-white rounded-xl p-2 m-0 customMd:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white ">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -27,12 +41,9 @@ export const Navbar = () => {
               <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
-          <Link href="#" className="text-center mr-5">
-            Przestrzeń rozmowy 🧠
-          </Link>
         </div>
       </nav>
-      {isOpen && (
+      {displayMobileNavbar && (
         <div
           aria-expanded={isOpen}
           className="flex justify-around p-3 text-sm items-center w-full text-white bg-tertiary font-medium ">
