@@ -1,22 +1,15 @@
 import React from 'react';
-import { paragraphSizes } from './paragraphSizes';
+import { TextProps } from './Text.types';
 
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
-type TextProps = {
-  children: React.ReactNode;
-  custom?: string;
-  size: Size;
-};
-
-export const Text = ({ children, custom, size }: TextProps) => {
+export const Text = ({ children, custom, size, color }: TextProps) => {
+  const paragraphSizes = ['xs', 'sm', 'md'];
   const isParagraph = paragraphSizes.some(
     (paragraphSize) => paragraphSize === size
   );
 
   return isParagraph ? (
-    <p className={`text-${size} ${custom}`}>{children}</p>
+    <p className={`text-${size} ${custom} text-${color}`}>{children}</p>
   ) : (
-    <h1 className={`text-${size} ${custom}`}>{children}</h1>
+    <h1 className={`text-${size} ${custom} text-${color}`}>{children}</h1>
   );
 };
