@@ -5,5 +5,5 @@ export type TextProps = {
   children: React.ReactNode;
   custom?: string;
   size: Size;
-  color: Colors;
+  color?: Colors;
 };
