@@ -23,8 +23,8 @@ export const HeroSection = () => {
         </button>
       </div>
       <div className=" w-1/2 flex flex-col items-center  ">
-        {ClientInfo.map(({ src, alt, isReversed }) => (
-          <Avatar src={src} alt={alt} isReversed={isReversed} key={alt} />
+        {ClientInfo.map(({ src, alt, reverse }) => (
+          <Avatar src={src} alt={alt} reverse={reverse} key={alt} />
         ))}
       </div>
     </section>
