@@ -17,11 +17,11 @@ export const Navbar = () => {
         <div className="flex relative justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
             href="#"
-            className="text-center custom-xs:text-base customLg:text-xl">
+            className="text-center custom-xs:text-base custom-lg:text-xl">
             Przestrzeń rozmowy 🧠
           </Link>
           {!isMobile && (
-            <div className="flex w-1/4 p-3 justify-around items-center text-md max-w-sm font-medium customLg:text-lg">
+            <div className="flex w-1/4 p-3 justify-around items-center text-md max-w-sm font-medium custom-lg:text-lg">
               <Link href="#about">O nas 👩‍💼👨‍💼</Link>
               <Link href="#contact">Kontakt 📞</Link>
             </div>
@@ -29,7 +29,7 @@ export const Navbar = () => {
           <button
             onClick={handleOpen}
             aria-label="Toggle menu"
-            className="bg-white rounded-xl p-2 m-0 customMd:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white ">
+            className="bg-white rounded-xl p-2 m-0 custom-md:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white ">
             <svg
               className="w-6 h-6"
               fill="none"
