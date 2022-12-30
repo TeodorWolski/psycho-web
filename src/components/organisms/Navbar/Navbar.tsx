@@ -12,12 +12,12 @@ export const Navbar = () => {
   };
 
   return (
-    <>
-      <nav className="sticky transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm customLg:h-20 z-50">
-        <div className="flex justify-around items-center w-full text-primary text-sm font-extrabold">
+    <nav className="sticky top-0 z-50">
+      <div className="relative transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm custom-lg:h-20 z-50">
+        <div className="flex relative justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
             href="#"
-            className="text-center customXs:text-base customLg:text-xl">
+            className="text-center custom-xs:text-base customLg:text-xl">
             Przestrzeń rozmowy 🧠
           </Link>
           {!isMobile && (
@@ -42,15 +42,15 @@ export const Navbar = () => {
             </svg>
           </button>
         </div>
-      </nav>
+      </div>
       {displayMobileNavbar && (
         <div
           aria-expanded={isOpen}
-          className="flex justify-around p-3 text-sm items-center w-full text-white bg-tertiary font-medium z-50">
+          className="flex justify-around relative p-3 text-sm items-center w-full text-white bg-tertiary font-medium z-50">
           <Link href="#about">O nas 👩‍💼👨‍💼</Link>
           <Link href="#contact">Kontakt 📞</Link>
         </div>
       )}
-    </>
+    </nav>
   );
 };
