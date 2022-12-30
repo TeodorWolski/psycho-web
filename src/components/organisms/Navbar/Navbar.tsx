@@ -46,7 +46,7 @@ export const Navbar = () => {
       {displayMobileNavbar && (
         <div
           aria-expanded={isOpen}
-          className="flex justify-around relative p-3 text-sm items-center w-full text-white bg-tertiary font-medium z-50">
+          className="flex justify-around relative p-3 text-sm items-center w-full text-white bg-tertiary font-medium z-50 custom-xs:text-base">
           <Link href="#about">O nas 👩‍💼👨‍💼</Link>
           <Link href="#contact">Kontakt 📞</Link>
         </div>
