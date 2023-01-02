@@ -21,7 +21,7 @@ export const Avatar = ({ src, alt, reverse }: AvatarProps) => {
   return (
     <img
       src={src}
-      className={`h-24 w-24 rounded-full border-solid border-4 border-tertiary ${reverseHelper()}`}
+      className={`h-24 w-24 rounded-full border-solid border-4 border-tertiary ${reverseHelper()} custom-xs:h-28 custom-xs:w-28`}
       alt={alt}
     />
   );
