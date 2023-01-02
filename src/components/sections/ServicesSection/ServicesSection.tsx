@@ -9,7 +9,10 @@ export const ServicesSection = () => {
         <div
           className="p-3 custom-xs:p-5 custom-sm:py-6 custom-sm:px-7"
           key={title}>
-          <Text color="primary" size="md" custom="font-bold custom-sm:text-lg">
+          <Text
+            color="primary"
+            size="base"
+            custom="font-bold custom-sm:text-lg">
             {title}
           </Text>
           <Text size="sm" custom="custom-sm:text-base">

@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="flex w-full justify-center px-5 flex-col custom-xs:flex-row">
         {content.map(({ name, phone, email }) => (
           <section className="my-3 px-5" key={name}>
-            <Text size="md" custom="font-medium py-1">
+            <Text size="base" custom="font-medium py-1">
               {name}
             </Text>
             <Text size="sm">

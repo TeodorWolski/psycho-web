@@ -21,7 +21,7 @@ export const Navbar = () => {
             Przestrzeń rozmowy 🧠
           </Link>
           {!isMobile && (
-            <div className="flex w-1/4 p-3 justify-around items-center text-md max-w-sm font-medium custom-lg:text-lg">
+            <div className="flex w-1/4 p-3 justify-around items-center text-base max-w-sm font-medium custom-lg:text-lg">
               <Link href="#about">O nas 👩‍💼👨‍💼</Link>
               <Link href="#contact">Kontakt 📞</Link>
             </div>
