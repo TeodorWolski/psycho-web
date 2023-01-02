@@ -1,4 +1,4 @@
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+type Size = 'xs' | 'sm' | 'base' | 'lg' | 'xl';
 type Colors = 'primary' | 'secondary' | 'tertiary' | 'white | "black';
 
 export type TextProps = {
