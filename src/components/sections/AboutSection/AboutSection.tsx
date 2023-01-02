@@ -5,7 +5,7 @@ import { content } from './content';
 
 export const AboutSection = () => {
   return (
-    <section className="w-full flex items-center justify-center mt-5 flex-col">
+    <section className="w-full flex items-center justify-center mt-5 flex-col custom-sm:my-8">
       <Text size="lg" custom="font-bold text-lg custom-sm:text-xl">
         Kim jesteśmy?
       </Text>
