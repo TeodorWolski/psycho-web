@@ -5,7 +5,7 @@ import { Text } from 'components/atoms/Text';
 
 export const HeroSection = () => {
   return (
-    <section className="px-3 my-5 h-72 w-full flex items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7">
+    <section className="px-3 my-5 h-72 w-full flex items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7 custom-sm:h-96">
       <div className=" flex flex-col flex-end custom-xs:justify-center">
         <Text custom="p-2 font-medium custom-xs:text-xl" size="lg">
           Lorem ipsum dolor sit amet,{' '}
