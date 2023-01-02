@@ -5,8 +5,8 @@ import { Text } from 'components/atoms/Text';
 
 export const HeroSection = () => {
   return (
-    <section className="px-3 my-5 h-72 w-full flex items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7 custom-sm:h-96">
-      <div className=" flex flex-col flex-end custom-xs:justify-center">
+    <section className="px-3 my-5 h-72 w-full flex justify-around items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7 custom-sm:h-96">
+      <div className="w-3/4 flex flex-col flex-end custom-xs:justify-center">
         <Text custom="p-2 font-medium custom-xs:text-xl" size="lg">
           Lorem ipsum dolor sit amet,{' '}
           <strong className="font-extrabold text-primary">
@@ -22,7 +22,7 @@ export const HeroSection = () => {
           Click me
         </button>
       </div>
-      <div className=" w-1/2 flex flex-col items-center  custom-xs:justify-center">
+      <div className="w-1/2 flex flex-col items-center  custom-xs:justify-center">
         {ClientInfo.map(({ src, alt, reverse }) => (
           <Avatar src={src} alt={alt} reverse={reverse} key={alt} />
         ))}
