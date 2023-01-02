@@ -5,8 +5,8 @@ import { Text } from 'components/atoms/Text';
 
 export const HeroSection = () => {
   return (
-    <section className="mx-3 my-5 h-72 h-full flex w-100 align-center justify-around custom-xs:justify-center custom-xs:h-80 custom-xs:my-0">
-      <div className="w-3/4 flex flex-col flex-end custom-xs:justify-center">
+    <section className="px-3 my-5 h-72 w-full flex items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7">
+      <div className=" flex flex-col flex-end custom-xs:justify-center">
         <Text custom="p-2 font-medium custom-xs:text-xl" size="lg">
           Lorem ipsum dolor sit amet,{' '}
           <strong className="font-extrabold text-primary">
@@ -14,11 +14,11 @@ export const HeroSection = () => {
             consectetur adipiscing elit.
           </strong>
         </Text>
-        <Text custom="w-full p-2" size="sm">
+        <Text custom="w-full p-2 custom-sm:text-base" size="sm">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
           in nobis a soluta tenetur
         </Text>
-        <button className="font-extrabold text-xs px-10 py-3 mt-3 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm">
+        <button className="font-extrabold text-xs px-10 py-3 mt-3 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm custom-sm:max-w-s">
           Click me
         </button>
       </div>
