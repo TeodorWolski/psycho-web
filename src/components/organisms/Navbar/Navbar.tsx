@@ -13,17 +13,21 @@ export const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50">
-      <div className="relative transition-all top-0 bg-secondary h-16 w-full flex justify-center items-center shadow-sm custom-lg:h-20 z-50">
+      <div className="relative transition-all top-0 bg-secondary h-20 w-full flex justify-center items-center shadow-sm custom-lg:h-20 z-50">
         <div className="flex relative justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
             href="#"
-            className="text-center custom-xs:text-base custom-lg:text-xl">
+            className="text-center custom-xs:text-base custom-md:text-lg">
             Przestrzeń rozmowy 🧠
           </Link>
           {!isMobile && (
-            <div className="flex w-1/4 p-3 justify-around items-center text-base max-w-sm font-medium custom-lg:text-lg">
-              <Link href="#about">O nas 👩‍💼👨‍💼</Link>
-              <Link href="#contact">Kontakt 📞</Link>
+            <div className="flex p-3 justify-around items-center text-base max-w-md font-medium">
+              <Link className="mx-5" href="#about">
+                O nas 👩‍💼👨‍💼
+              </Link>
+              <Link className="mx-5" href="#contact">
+                Kontakt 📞
+              </Link>
             </div>
           )}
           <button
