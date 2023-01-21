@@ -2,16 +2,16 @@ export const content = [
   {
     title: 'Profesjonalna pomoc 🛟',
     description:
-      'lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Jesteśmy specjalistami z dużym doświadczeniem, znajomością i umiejętnościami w diagnozowaniu i leczeniu różnych problemów psychicznych.',
   },
   {
     title: 'Oczyszczenie umysłu 🧘‍♀️',
     description:
-      'lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Pomożemy Ci oczyszczyć umysł z negatywnych myśli, które Cię ograniczają. Wspólnie zrozumiemy, dlaczego tak myślisz i jak to zmienić.',
   },
   {
     title: 'Wewnętrzny spokój 🍃',
     description:
-      'lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+      'Pomożemy Ci znaleźć wewnętrzny spokój, który jest niezbędny do prawidłowego funkcjonowania.',
   },
 ];
