@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
