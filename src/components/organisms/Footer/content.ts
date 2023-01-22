@@ -1,12 +1,14 @@
 export const content = [
   {
-    name: 'Tadeusz Norek',
-    phone: '123 456 789',
-    email: 'mail@example.com',
+    name: 'Maciej Maraszkiewicz',
+    phone: '508 102 997 ',
+    email: 'maraszkiewicz.psycholog@gmail.com',
+    price: '150 zł/50 min',
   },
   {
-    name: 'Christian Kubota',
-    phone: '789 654 321',
-    email: 'liam@example.com',
+    name: 'Monika Walczak',
+    phone: '694 871 853',
+    email: 'monlos@interia.pl',
+    price: '150 zł/50 min',
   },
 ];
