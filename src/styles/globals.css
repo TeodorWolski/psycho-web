@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat' !important;
+  overflow-x: hidden;
 }
 
 a {
