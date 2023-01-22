@@ -14,9 +14,9 @@ export const Avatar = ({ src, alt, reverse }: AvatarProps) => {
   const reverseHelper = () => {
     switch (reverse) {
       case 'first':
-        return 'z-10 -translate-x-5 translate-y-5';
+        return 'z-10 -translate-x-8 translate-y-5';
       case 'second':
-        return '-translate-y-1 translate-x-7';
+        return '-translate-y-1 translate-x-4';
       default:
         return '';
     }
