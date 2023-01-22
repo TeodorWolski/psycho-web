@@ -10,7 +10,7 @@ export const AboutSection = () => {
         Kim jesteśmy?
       </Text>
       <div className="flex flex-col items-center justify-center custom-sm:flex-row">
-        {content.map(({ name, description, src, alt }) => (
+        {content.map(({ name, shortDescription, src, alt }) => (
           <div
             className="flex p-2 custom-xs:p-5 items-center justify-center flex-col "
             key={name}>
@@ -21,8 +21,14 @@ export const AboutSection = () => {
               custom="font-bold p-2 custom-sm:text-lg">
               {name}
             </Text>
-            <Text size="sm" custom="text-center font-medium">
-              {description}
+            <Text size="sm" custom="text-center font-medium px-3">
+              {shortDescription}
+            </Text>
+            <Text
+              size="sm"
+              color="primary"
+              custom="font-bold my-1 py-2 custom-sm:text-base">
+              👉 Dowiedz się więcej 👈
             </Text>
           </div>
         ))}
