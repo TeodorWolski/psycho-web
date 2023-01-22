@@ -12,7 +12,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="sticky top-0 z-20">
       <div className="relative transition-all top-0 bg-secondary h-20 w-full flex justify-center items-center shadow-sm custom-lg:h-20 z-50">
         <div className="flex relative justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
