@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ModalProps } from './Modal.types';
+import { Text } from 'components/atoms/Text';
 
 export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
   if (!open) return null;
@@ -13,16 +14,20 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
     <>
       <div
         onClick={handleCloseModal}
-        className="fixed h-screen w-screen inset-0 z-40 flex overlay items-center justify-center">
+        className="fixed h-screen w-screen inset-0 z-40 flex overlay items-center justify-center ">
         <div
           onClick={(e) => {
             e.stopPropagation();
           }}
-          className="h-60 absolute w-20 bg-white flex item-center opacity-100 justify-center z-50 inset-1/2 translate-x-1/2 -translate-y-1/2">
+          className="h-3/5 absolute w-60 bg-white flex item-center opacity-100 justify-center z-50 rounded-md">
           {content.map(({ name, longDescription }, i) => (
-            <div key={i}>
-              <h1>{name}</h1>
-              <p>{longDescription}</p>
+            <div key={i} className="overflow-y-scroll">
+              <Text size="base" color="primary" custom="font-bold p-4">
+                {name}
+              </Text>
+              <Text size="xs" custom=" px-4">
+                {longDescription}
+              </Text>
             </div>
           ))}
         </div>
