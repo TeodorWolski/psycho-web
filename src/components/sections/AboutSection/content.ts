@@ -9,6 +9,7 @@ export const content = [
 
     src: ClientOnePicture,
     alt: 'Maciej Maraszkiewicz photo',
+    longDescription: '',
   },
   {
     name: 'Monika Walczak',
@@ -16,5 +17,6 @@ export const content = [
       'Psycholog, diagnosta, terapeuta dzieci i młodzieży. Ukończyła 5-letnie, dzienne Studia Magisterskie z zakresu psychologii wychowawczej na Uniwersytecie Kazimierza Wielkiego w Bydgoszczy.',
     alt: 'Monika Walczak photo',
     src: ClientTwoPicture,
+    longDescription: '',
   },
 ];
