@@ -21,6 +21,6 @@ export const content = [
     src: ClientTwoPicture,
     longDescription:
       'Obecnie pracuje w Szkole Podstawowej, Poradni Psychologiczno-Pedagogicznej, Ośrodku Doskonalenia Nauczycieli oraz Ośrodku Doskonalenia Kadra „Atena”. Jako wykładowca współpracuje z Kujawsko-Pomorską Szkołą Wyższą z Bydgoszczy. Ukończyła 5-letnie, dzienne Studia Magisterskie z zakresu psychologii wychowawczej na Uniwersytecie Kazimierza Wielkiego w Bydgoszczy, Międzywydziałowe Studium Pedagogiczne w Bydgoszcz, Arteterapię oraz Studia Podyplomowe z zakresu Mediacje. Jest Trenerem Umiejętności Społecznych (TUS). Uzyskała tytuł Międzynarodowego diagnosty w zakresie Testu Profi Competence. Jest również trenerem metody  w zakresie terapii funkcji poznawczych Metodą Feuersteina - Instrumental Enrichment I. Z obszaru terapii ukończyła Terapię Systemową Rodzin oraz Terapię Skoncentrowaną na Rozwiązaniach.  Prowadzi terapię zaburzeń emocjonalnych u dzieci i młodzieży w oparciu o metody poznawczo- behawioralne, relaksacyjne, projekcyjne. Prowadzi szkolenia i warsztaty z obszaru: depresje i zachowania suicydalne u dzieci i młodzieży, behawioralne metody pracy z dzieckiem z trudnościami w zachowaniu, zaburzenia lękowe u dzieci, adolescencja- wyzwania wychowawcze, trening umiejętności społecznych, trening umiejętności wychowawczych dla rodziców i nauczycieli. Stale swoją pracę poddaje superwizji. ',
-    scienceTitles: ['Psycholog', 'Diagnosta', 'Terapeuta dzieci i młodzieży'],
+    scienceTitles: ['Psycholog', 'Diagnosta'],
   },
 ];

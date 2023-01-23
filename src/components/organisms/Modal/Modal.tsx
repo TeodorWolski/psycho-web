@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ModalProps } from './Modal.types';
 import { Text } from 'components/atoms/Text';
-import { ScienceTitle } from 'components/molecules/ScienceTitle';
+import { ScienceTitleSection } from 'components/molecules/ScienceTitleSection';
 
 export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
   const { scienceTitles } = content[0];
@@ -22,23 +22,33 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
           onClick={(e) => {
             e.stopPropagation();
           }}
-          className="h-3/5 absolute w-60 bg-white flex item-center opacity-100 justify-center z-50 rounded-md">
+          className="h-3/5 absolute w-72 bg-white flex item-center opacity-100 justify-center z-50 rounded-md">
           {content.map(({ name, longDescription }, i) => (
             <div key={i} className="overflow-y-scroll">
-              <div className="flex item-center w-full relative">
-                <Text size="base" color="primary" custom="font-bold p-4">
+              <div className="flex item-center w-full relative justify">
+                <Text size="base" color="primary" custom="font-bold px-4 pt-4">
                   {name}
                 </Text>
                 <button
-                  className="text-base absolute inset-y-1 inset-x-52 "
+                  className="text-base font-bold absolute inset-y-3.5 inset-x-64"
                   onClick={handleCloseModal}>
                   x
                 </button>
               </div>
-              <ScienceTitle scienceTitles={scienceTitles} />
-              <Text size="xs" custom=" px-4">
-                {longDescription}
-              </Text>
+              <div className="flex justify-center flex-col px-4">
+                <div className="border-b-2 border-tertiary w-5/8 flex items-center justify-between mt-1 mb-2">
+                  <Text
+                    size="sm"
+                    color="black"
+                    custom="font-semibold pt-1 pb-2 ">
+                    O mnie
+                  </Text>
+                  <ScienceTitleSection scienceTitles={scienceTitles} />
+                </div>
+                <Text size="xs" custom="w-full">
+                  {longDescription}
+                </Text>
+              </div>
             </div>
           ))}
         </div>

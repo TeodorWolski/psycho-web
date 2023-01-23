@@ -1,1 +1,0 @@
-export { ScienceTitle } from './ScienceTitle';
