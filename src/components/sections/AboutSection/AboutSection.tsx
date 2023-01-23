@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text } from 'components/atoms/Text';
 import { Avatar } from 'components/atoms/Avatar';
-import { Modal } from 'components/molecules/Modal';
+import { Modal } from 'components/organisms/Modal';
 import { content } from './content';
 
 export const AboutSection = () => {
