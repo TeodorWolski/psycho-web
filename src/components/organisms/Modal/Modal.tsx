@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ModalProps } from './Modal.types';
 import { Text } from 'components/atoms/Text';
+import { ScienceTitle } from 'components/molecules/ScienceTitle';
 
 export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
   if (!open) return null;
+  const { scienceTitle } = content[0];
 
   const handleCloseModal = () => {
     setOpenModal(false);
@@ -32,6 +34,9 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
                   x
                 </button>
               </div>
+              {scienceTitle.map((title, i) => (
+                <ScienceTitle key={i} scienceTitle={title} />
+              ))}
               <Text size="xs" custom=" px-4">
                 {longDescription}
               </Text>
