@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Text } from 'components/atoms/Text';
 import { Avatar } from 'components/atoms/Avatar';
 import { Modal } from 'components/organisms/Modal';
+import { RefContext, RefContextType } from 'context';
 import { content } from './content';
 
 export const AboutSection = () => {
   const [openModal, setOpenModal] = useState(false);
   const [currentContent, setCurrentContent] = useState(0);
   const currentClientContent = [content[currentContent]];
+  const { aboutRef } = useContext(RefContext) as RefContextType;
 
   const handleOpenModal = (index: number) => {
     setCurrentContent(index);
@@ -15,7 +17,9 @@ export const AboutSection = () => {
   };
 
   return (
-    <section className="w-full flex items-center justify-center mt-5 flex-col custom-sm:my-8">
+    <section
+      ref={aboutRef}
+      className="w-full flex items-center justify-center mt-5 flex-col custom-sm:my-8">
       <Text size="lg" custom="font-bold text-lg custom-sm:text-xl">
         Kim jesteśmy?
       </Text>

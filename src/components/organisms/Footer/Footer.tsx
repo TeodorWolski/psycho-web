@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Text } from 'components/atoms/Text';
 import { content } from './content';
+import { RefContext, RefContextType } from 'context';
 import Link from 'next/link';
 
 export const Footer = () => {
+  const { contactRef } = useContext(RefContext) as RefContextType;
+
   return (
-    <footer className="bg-tertiary text-white p-3 mt-5 w-full flex flex-col align-center justify-center custom-sm:py-8">
+    <footer
+      ref={contactRef}
+      className="bg-tertiary text-white p-3 mt-5 w-full flex flex-col align-center justify-center custom-sm:py-8">
       <Text size="lg" custom="font-bold text-center custom-sm:text-xl">
         Kontakt
       </Text>

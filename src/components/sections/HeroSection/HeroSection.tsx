@@ -2,8 +2,11 @@ import React from 'react';
 import { Avatar } from 'components/atoms/Avatar';
 import { ClientInfo } from 'constant/ClientInfo';
 import { Text } from 'components/atoms/Text';
+import { useScroll } from 'hooks/useScroll';
 
 export const HeroSection = () => {
+  const { handleScroll } = useScroll();
+
   return (
     <section className="px-3 mt-2 mb-5 h-72 w-full flex flex-col justify-around items-center custom-xs:justify-center custom-xs:h-80 custom-xs:my-0 custom-sm:px-7 custom-sm:h-96 ">
       <div className="flex flex-col items-center">
@@ -28,7 +31,9 @@ export const HeroSection = () => {
             ))}
           </div>
         </div>
-        <button className="font-extrabold w-full text-sm px-10 py-3 mt-4 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm custom-sm:max-w-s">
+        <button
+          onClick={() => handleScroll('contact')}
+          className="font-extrabold w-full text-sm px-10 py-3 mt-4 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm custom-sm:max-w-s">
           Umów się na konsultacje
         </button>
       </div>
