@@ -22,9 +22,16 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
           className="h-3/5 absolute w-60 bg-white flex item-center opacity-100 justify-center z-50 rounded-md">
           {content.map(({ name, longDescription }, i) => (
             <div key={i} className="overflow-y-scroll">
-              <Text size="base" color="primary" custom="font-bold p-4">
-                {name}
-              </Text>
+              <div className="flex item-center w-full relative">
+                <Text size="base" color="primary" custom="font-bold p-4">
+                  {name}
+                </Text>
+                <button
+                  className="text-base absolute inset-y-1 inset-x-52 "
+                  onClick={handleCloseModal}>
+                  x
+                </button>
+              </div>
               <Text size="xs" custom=" px-4">
                 {longDescription}
               </Text>
