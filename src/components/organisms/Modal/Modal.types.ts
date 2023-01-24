@@ -1,8 +1,14 @@
 import { Dispatch, SetStateAction } from 'react';
 
+interface aboutTexts {
+  title?: string;
+  text: string;
+}
+
 export interface Content {
   name: string;
-  longDescription: string;
+  // longDescription: string;
+  aboutTexts: aboutTexts[];
   scienceTitles: string[];
 }
 

@@ -1,5 +1,5 @@
-import ClientOnePicture from 'assets/ClientOne.jpg';
-import ClientTwoPicture from 'assets/ClientTwo.jpg';
+import ClientOnePicture from 'assets/images/ClientOne.jpg';
+import ClientTwoPicture from 'assets/images/ClientTwo.jpg';
 
 export const ClientInfo = [
   {

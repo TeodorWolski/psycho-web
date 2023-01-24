@@ -5,8 +5,6 @@ import { Text } from 'components/atoms/Text';
 import { ScienceTitleSection } from 'components/molecules/ScienceTitleSection';
 
 export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
-  const { scienceTitles } = content[0];
-
   if (!open) return null;
 
   const handleCloseModal = () => {
@@ -23,7 +21,7 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
             e.stopPropagation();
           }}
           className="h-3/5 absolute w-72 bg-white flex item-center opacity-100 justify-center z-50 rounded-md">
-          {content.map(({ name, longDescription }, i) => (
+          {content.map(({ scienceTitles, name, aboutTexts }, i) => (
             <div key={i} className="overflow-y-scroll">
               <div className="flex item-center w-full relative justify">
                 <Text size="base" color="primary" custom="font-bold px-4 pt-4">
@@ -45,9 +43,16 @@ export const Modal = ({ open, setOpenModal, content }: ModalProps) => {
                   </Text>
                   <ScienceTitleSection scienceTitles={scienceTitles} />
                 </div>
-                <Text size="xs" custom="w-full">
-                  {longDescription}
-                </Text>
+                {aboutTexts.map(({ text, title }) => (
+                  <div key={i}>
+                    <Text size="sm" custom="font-semibold">
+                      {title}
+                    </Text>
+                    <Text size="sm" custom="pb-3">
+                      {text}
+                    </Text>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
