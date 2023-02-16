@@ -20,7 +20,9 @@ export const AboutSection = () => {
     <section
       ref={aboutRef}
       className="w-full flex items-center justify-center mt-5 flex-col custom-sm:my-8">
-      <Text size="lg" custom="font-bold text-lg custom-sm:text-xl">
+      <Text
+        size="lg"
+        custom="font-bold text-lg custom-sm:text-xl custom-lg:text-2xl">
         Kim jesteśmy?
       </Text>
       <div className="flex flex-col items-center justify-center custom-sm:flex-row">
@@ -32,15 +34,17 @@ export const AboutSection = () => {
             <Text
               size="base"
               color="primary"
-              custom="font-bold p-2 custom-sm:text-lg">
+              custom="font-bold p-2 custom-sm:text-lg custom-lg:text-xl">
               {name}
             </Text>
-            <Text size="sm" custom="text-center font-medium px-3">
+            <Text
+              size="sm"
+              custom="text-center font-medium px-3 custom-lg:text-base">
               {shortDescription}
             </Text>
             <button
               onClick={() => handleOpenModal(index)}
-              className="font-bold my-1 py-2 custom-sm:text-base text-primary">
+              className="font-bold my-1 py-2 custom-sm:text-base text-primary custom-lg:text-xl">
               👉 Dowiedz się więcej 👈
             </button>
           </div>
