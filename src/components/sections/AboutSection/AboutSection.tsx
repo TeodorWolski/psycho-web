@@ -26,7 +26,7 @@ export const AboutSection = () => {
       <div className="flex flex-col items-center justify-center custom-sm:flex-row">
         {content.map(({ name, shortDescription, src, alt }, index) => (
           <div
-            className="flex p-2 custom-xs:p-5 items-center justify-center flex-col "
+            className="flex p-2 custom-xs:p-5 items-center justify-center flex-col w-1/2"
             key={name}>
             <Avatar src={src} alt={alt} />
             <Text
