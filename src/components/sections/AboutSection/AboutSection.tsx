@@ -39,7 +39,7 @@ export const AboutSection = () => {
             </Text>
             <Text
               size="sm"
-              custom="text-center font-medium px-3 custom-lg:text-base">
+              custom="text-center font-medium px-3 custom-lg:text-base custom-xl:max-w-3xl">
               {shortDescription}
             </Text>
             <button
