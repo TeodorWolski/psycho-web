@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </div>
         <button
           onClick={() => handleScroll('contact')}
-          className="font-extrabold w-full text-sm px-10 py-3 mt-4 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm custom-sm:max-w-s">
+          className="font-extrabold w-full text-sm px-10 py-3 mt-4 mr-auto text-white bg-tertiary shadow-black rounded-3xl  custom-xs:text-sm custom-sm:max-w-sm custom-sm:-translate-y-12 custom-md:-translate-y-16">
           Umów się na konsultacje
         </button>
       </div>
