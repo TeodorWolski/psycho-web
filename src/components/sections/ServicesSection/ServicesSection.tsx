@@ -12,12 +12,12 @@ export const ServicesSection = () => {
           <Text
             color="primary"
             size="base"
-            custom="font-semibold custom-sm:text-lg custom-md:py-0 custom-md:text-center w-100 custom-md:h-30 mb-2">
+            custom="font-semibold custom-sm:text-lg custom-md:py-0 custom-md:text-center w-100 custom-md:h-30 mb-2 custom-lg:text-xl">
             {title}
           </Text>
           <Text
             size="xs"
-            custom="font-normal custom-sm:text-sm custom-md:text-center h-full">
+            custom="font-normal custom-sm:text-sm custom-md:text-center custom-lg:text-base h-full">
             {description}
           </Text>
         </div>
