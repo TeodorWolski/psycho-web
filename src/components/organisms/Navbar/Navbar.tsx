@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { useMobile } from 'hooks/useMobile';
+import { useScroll } from 'hooks/useScroll';
+
 import Link from 'next/link';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { isMobile } = useMobile();
+  const { handleScroll } = useScroll();
   const displayMobileNavbar = isOpen && isMobile;
 
   const handleOpen = () => {
@@ -12,7 +15,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="sticky top-0 z-20">
       <div className="relative transition-all top-0 bg-secondary h-20 w-full flex justify-center items-center shadow-sm custom-lg:h-20 z-50">
         <div className="flex relative justify-around items-center w-full text-primary text-sm font-extrabold">
           <Link
@@ -22,10 +25,16 @@ export const Navbar = () => {
           </Link>
           {!isMobile && (
             <div className="flex p-3 justify-around items-center text-base max-w-md font-medium">
-              <Link className="mx-5" href="#about">
+              <Link
+                className="mx-5"
+                onClick={() => handleScroll('about')}
+                href="#about">
                 O nas 👩‍💼👨‍💼
               </Link>
-              <Link className="mx-5" href="#contact">
+              <Link
+                className="mx-5"
+                href="#contact"
+                onClick={() => handleScroll('contact')}>
                 Kontakt 📞
               </Link>
             </div>
@@ -51,8 +60,20 @@ export const Navbar = () => {
         <div
           aria-expanded={isOpen}
           className="flex justify-around relative p-3 text-sm items-center w-full text-white bg-tertiary font-medium z-50 custom-xs:text-base">
-          <Link href="#about">O nas 👩‍💼👨‍💼</Link>
-          <Link href="#contact">Kontakt 📞</Link>
+          <Link
+            onClick={() => {
+              handleScroll('about'), setIsOpen(false);
+            }}
+            href="#about">
+            O nas 👩‍💼👨‍💼
+          </Link>
+          <Link
+            onClick={() => {
+              handleScroll('contact'), setIsOpen(false);
+            }}
+            href="#contact">
+            Kontakt 📞
+          </Link>
         </div>
       )}
     </nav>

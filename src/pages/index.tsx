@@ -4,15 +4,18 @@ import { ServicesSection } from 'components/sections/ServicesSection';
 import { AboutSection } from 'components/sections/AboutSection';
 import { Navbar } from 'components/organisms/Navbar';
 import { Footer } from 'components/organisms/Footer';
+import { RefProvider } from 'context';
 
 const Home = () => {
   return (
     <main>
-      <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <Footer />
+      <RefProvider>
+        <Navbar />
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <Footer />
+      </RefProvider>
     </main>
   );
 };
