@@ -16,6 +16,11 @@ export const Footer = () => {
         custom="font-bold text-center custom-sm:text-xl custom-lg:text-2xl">
         Kontakt
       </Text>
+      <Text
+        size="base"
+        custom="text-center custom-sm:text-lg custom-lg:text-xl py-2">
+        🔔 W celu umówienia się na wizytę prosimy o SMS🔔
+      </Text>
       <div className="flex w-full items-center justify-around flex-col custom-sm:flex-row custom-xs:px-5 custom-lg:justify-center">
         {content.map(({ name, phone, email, price }) => (
           <section
