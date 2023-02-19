@@ -24,7 +24,7 @@ export const Navbar = () => {
             Przestrzeń rozmowy 🧠
           </Link>
           {!isMobile && (
-            <div className="flex p-3 justify-around items-center text-base max-w-md font-medium">
+            <div className="hidden custom-md:flex p-3 justify-around items-center text-base max-w-md font-medium">
               <Link
                 className="mx-5"
                 onClick={() => handleScroll('about')}
