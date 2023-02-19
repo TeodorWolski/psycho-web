@@ -4,10 +4,10 @@ import { content } from './content';
 
 export const ServicesSection = () => {
   return (
-    <section className="bg-secondary h-80 w-full custom-radius flex items-center justify-center flex-col custom-sm:h-96 custom-md:flex-row custom-md:h-52 custom-lg:h-40">
+    <section className="bg-secondary h-40 w-full custom-radius flex items-center justify-center flex-col custom-sm:flex-row custom-md:h-52 custom-lg:h-40">
       {content.map(({ title }) => (
         <div
-          className="py-2 custom-xs:p-5 custom-sm:py-6 custom-sm:px-7 custom-md:px-4 custom-md:p-10 custom-md:h-full custom-md:w-1/3 custom-md:justify-center custom-md:items-center custom-md:flex custom-md:flex-col custom-md:items-center custom-xl:max-w-xl"
+          className="py-2  custom-md:p-10 custom-md:h-full custom-sm:px-2 custom-md:w-1/3 custom-md:justify-center custom-md:items-center custom-md:flex custom-md:flex-col custom-md:items-center custom-xl:max-w-xl"
           key={title}>
           <Text
             color="primary"
