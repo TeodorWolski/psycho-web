@@ -15,11 +15,11 @@ export const content = [
       },
       {
         title: 'Usługi',
-        text: 'Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowych kurs I i II stopnia), wykorzystując wiedzę z zakresu dialogu motywującego i terapii poznawczo – behawioralnej. Stale swoją pracę poddaje superwizji.',
+        text: 'Pracuje z młodzieżą i osobami dorosłymi, towarzysząc im w wędrówce zwanej życiem.',
       },
       {
         title: 'Wykształcenie',
-        text: 'Obecnie uczestniczy w 4 – letnim kursie psychoterapii poznawczo – behawioralnej.',
+        text: 'Obecnie uczestniczy w 4 – letnim kursie psychoterapii poznawczo – behawioralnej. Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowych kurs I i II stopnia), wykorzystując wiedzę z zakresu dialogu motywującego i terapii poznawczo – behawioralnej. Stale swoją pracę poddaje superwizji.',
       },
     ],
     scienceTitles: ['Socjolog', 'Psycholog'],
