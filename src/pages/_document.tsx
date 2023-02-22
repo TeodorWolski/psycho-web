@@ -11,6 +11,10 @@ export default function Document() {
           rel="stylesheet"
         />
         <link href="/dist/output.css" rel="stylesheet" />
+        <meta
+          name="google-site-verification"
+          content="pBUFrzPplF6dRsJpZHHv3wpatv9zkPp9BzG2jWW0eds"
+        />
       </Head>
       <body>
         <Main />
