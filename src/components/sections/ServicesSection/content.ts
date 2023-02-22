@@ -11,7 +11,6 @@ export const content = [
   },
   {
     title: 'Wewnętrzny spokój 🍃',
-    description:
-      'Pomożemy Ci znaleźć wewnętrzny spokój, który jest niezbędny do prawidłowego funkcjonowania.',
+    description: '',
   },
 ];
