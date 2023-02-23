@@ -5,7 +5,7 @@ export const content = [
   {
     name: 'Maciej Maraszkiewicz',
     shortDescription:
-      'Socjolog, psycholog. Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowych kurs I i II stopnia)',
+      'Socjolog, psycholog. Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowy kurs I i II stopnia)',
 
     src: ClientOnePicture,
     alt: 'Maciej Maraszkiewicz photo',
@@ -19,7 +19,7 @@ export const content = [
       },
       {
         title: 'Wykształcenie',
-        text: 'Obecnie uczestniczy w 4 – letnim kursie psychoterapii poznawczo – behawioralnej. Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowych kurs I i II stopnia), wykorzystując wiedzę z zakresu dialogu motywującego i terapii poznawczo – behawioralnej. Stale swoją pracę poddaje superwizji.',
+        text: 'Obecnie uczestniczy w 4 – letnim kursie psychoterapii poznawczo – behawioralnej. Pracuje w nurcie Terapii Skoncentrowanej na Rozwiązaniach (ukończony całościowy kurs I i II stopnia), wykorzystując wiedzę z zakresu dialogu motywującego i terapii poznawczo – behawioralnej. Stale swoją pracę poddaje superwizji.',
       },
     ],
     scienceTitles: ['Socjolog', 'Psycholog'],
